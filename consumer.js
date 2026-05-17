@@ -99,9 +99,9 @@ export async function consumer() {
 
                     // store the failed msg to DB
                     const failedMsg = new DLQModel({
-                        to: data.to || "Unknown",
+                        to: data.email || "Unknown",
                         subject: data.subject || "No Subject",
-                        text: data.text || "",
+                        text: data.message || "",
                         html: data.html || "",
                         reason: reason
                     });

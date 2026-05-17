@@ -14,8 +14,7 @@ const DLQSchema = new mongoose.Schema({
         required: true
     },
     html:{
-        type: String,
-        required: true
+        type: String
     },
     reason:{
         type: String
